@@ -29,6 +29,7 @@ parts:
   - caption: Websites
     chapters:
       - file: table-of-contents
+      - file: article-layout
       - file: themes-and-extensions
       - file: seo-and-social
       - file: accessibility-and-performance
