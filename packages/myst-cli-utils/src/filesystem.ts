@@ -1,10 +1,10 @@
 import fs from 'fs';
 import path from 'path';
-import { createHash } from 'crypto';
+import * as crypto from 'crypto';
 import type { ISession } from './types';
 
-export function computeHash(content: string) {
-  return createHash('md5').update(content).digest('hex');
+export function computeHash(content) {
+    return crypto.createHash('md5').update(content).digest('hex');
 }
 
 /** Writes a file ensuring that the directory exists */
